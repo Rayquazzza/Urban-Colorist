@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e416d85fddcf88b44b362fc665b3ac89, type: 3}
+  m_Name: CardSpriteDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::CardBattle.CardSpriteDatabase
+  suits:
+  - suit: 0
+    ranks:
+    - {fileID: 21300000, guid: 8c105ca4cb3877e44b67ab3538ae3162, type: 3}
+    - {fileID: 21300000, guid: c23d67123d483fc4cbd13eebec534bc9, type: 3}
+    - {fileID: 21300000, guid: 1b43c70485c56bb479a134f322925e53, type: 3}
+    - {fileID: 21300000, guid: 4403c30b2af4cfa40b0c7c76e4e6a319, type: 3}
+    - {fileID: 21300000, guid: c8c8cd6201438a94286c258001933404, type: 3}
+    - {fileID: 21300000, guid: fcda996aa94faeb4a84f8d59de0bbc44, type: 3}
+    - {fileID: 21300000, guid: 03bc5bd791a4e224581cd926a28177c1, type: 3}
+  - suit: 1
+    ranks:
+    - {fileID: 21300000, guid: 8cee56124038f2d4698eaced9f699347, type: 3}
+    - {fileID: 21300000, guid: de6bf9898e303bc45bfc8dff33a21192, type: 3}
+    - {fileID: 21300000, guid: 7a9627aadec6dec4995beb01256726e1, type: 3}
+    - {fileID: 21300000, guid: 004c4d967cb9dbd47b70ba0b95994be5, type: 3}
+    - {fileID: 21300000, guid: 87cc351b9c9a19e41812e298c9969b4f, type: 3}
+    - {fileID: 21300000, guid: 49fdc007d8d3dbd4c82e5c9bf92fc9bf, type: 3}
+    - {fileID: 21300000, guid: 5433a0ae428c34a4381d0f26229f5591, type: 3}
+  - suit: 2
+    ranks:
+    - {fileID: 21300000, guid: 842d21297b6939147af23e6fc1aa34d8, type: 3}
+    - {fileID: 21300000, guid: 2140e33ddcb3a9740b295ea4ab09689a, type: 3}
+    - {fileID: 21300000, guid: 017b1fca04b57fa449b5e0cd410b483f, type: 3}
+    - {fileID: 21300000, guid: 043fa5a8c323d7f49ac28ebf595dbc2c, type: 3}
+    - {fileID: 21300000, guid: 149d2e9561af102419e98e577ada3df7, type: 3}
+    - {fileID: 21300000, guid: 6152739d1fa84104baf2599a91ef743f, type: 3}
+    - {fileID: 21300000, guid: a43716bb66187294c8fad02991cfef90, type: 3}
+  - suit: 3
+    ranks:
+    - {fileID: 21300000, guid: bb1f045ad60043f4c975d5c7a0f78a3d, type: 3}
+    - {fileID: 21300000, guid: 4cb153420bffb22458b296f7dffef28b, type: 3}
+    - {fileID: 21300000, guid: 25503e0d9cc054f44ac72bdb96d4c08c, type: 3}
+    - {fileID: 21300000, guid: 75b7eb87cbe22b6419a540f472af7a7e, type: 3}
+    - {fileID: 21300000, guid: 2b34759956dc6a1489e5cc4bd675bd75, type: 3}
+    - {fileID: 21300000, guid: b7352b2e05a030a4db6072eb9facc7a6, type: 3}
+    - {fileID: 21300000, guid: 42acfed1870e7c347a46ff228a7b0fc0, type: 3}
+  cardBackSprite: {fileID: 0}

@@ -1,0 +1,17 @@
+{
+    "name": "BattleTest",
+    "rootNamespace": "",
+    "references": [
+        "DG.Tweening",
+        "Core.Tools"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
