@@ -50,9 +50,6 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private SkillIconSelection _skillIconSelection;
 
 
-    private List<Card> _cards = new List<Card>();
-    public IReadOnlyList<Card> Cards => _cards;
-
 
     private BattleState _currentBattleState;
 
@@ -64,27 +61,32 @@ public class BattleManager : MonoBehaviour
     }
 
     private void Initialization()
-    {
+    {    
+        var cards = new List<Card>();
 
         foreach (var test in testDeck)
         {
             Card card = Instantiate(_cardPrefab, _handContainer);
             card.SetCard(test.Suit, test.Rank, _cardSelection);
             card.SetSprite(_cardSpriteDatabase.GetSprite(card));
-            _cards.Add(card);
+            cards.Add(card);
         }
 
-        DeckManager = new DeckManager(_cards);
-        DeckManager.DrawCards(_handCountPerTurn);
-        _handLayout.ArrangeCards(_cards);
+        DeckManager = new DeckManager(cards);
 
-
-        _skillIconSelection.Setup(_playerUnit, DeckManager, _cardSelection);
+        
     }
 
     private void Start()
     {
+        DeckManager.DrawCards(_handCountPerTurn);
+        _hudManager.InitCards(DeckManager.Hand.ToList());
+        _handLayout.ArrangeCards(DeckManager.Hand.ToList());
+
+        _skillIconSelection.Setup(_playerUnit, DeckManager, _cardSelection);
+
         _currentBattleState = BattleState.Start;
+
         StartPlayerTurn();
     }
 
@@ -92,6 +94,7 @@ public class BattleManager : MonoBehaviour
     private void StartPlayerTurn()
     {
         _skillIconSelection.RefreshIcons();
+        _hudManager.RefreshPlayerTurnUI(DeckManager, _cardSelection);
     }
 
 }

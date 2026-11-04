@@ -349,6 +349,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HUDManager
   _playerHealthBar: {fileID: 765075738}
   _enemyHealthBar: {fileID: 1256978460}
+  _handLayout: {fileID: 807738475}
+  _handContainer: {fileID: 807738474}
+  _cardPrefab: {fileID: 5679840305282325636, guid: 9ecdf4d050d5fba4184e24a198d67a7e, type: 3}
+  _cardSpriteDatabase: {fileID: 11400000, guid: 8babb1bb664b35a4691b070900a024fd, type: 2}
+  _skillIconSelection: {fileID: 56743876}
 --- !u!1 &467794675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1205,7 @@ MonoBehaviour:
   _cardPrefab: {fileID: 5679840305282325636, guid: 9ecdf4d050d5fba4184e24a198d67a7e, type: 3}
   _handLayout: {fileID: 807738475}
   _handContainer: {fileID: 807738474}
+  _handCountPerTurn: 3
   _cardSelection: {fileID: 469176110}
   _skillIconSelection: {fileID: 56743876}
 --- !u!4 &1326301251
